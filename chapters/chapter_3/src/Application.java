@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.text.MessageFormat;
 
 public class Application {
     public static int max(int[] numbers, int length) {
@@ -16,17 +17,16 @@ public class Application {
     public static void main(String []args) {
         Scanner scanner = new Scanner(System.in);
 
-        int current = 0;
-
         final int length = 3;
         int[] numbers = new int[length];
 
-        while (current != length) {
-            System.out.print("Введите число: ");
+        String pattern = "Введите число под номером {0}: ";
+
+        for (int i = 0; i < length; i++) {
+            System.out.print(MessageFormat.format(pattern, i + 1));
             int number = scanner.nextInt();
 
-            numbers[current] = number;
-            current++;
+            numbers[i] = number;
         }
 
         System.out.print("Максимальное число: ");
