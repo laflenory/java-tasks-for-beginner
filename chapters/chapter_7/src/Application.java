@@ -3,8 +3,18 @@ import java.text.MessageFormat;
 import java.util.Arrays;
 
 public class Application {
+//    public static double average(int[] numbers) {
+//        return (double) Arrays.stream(numbers).sum() / numbers.length;
+//    }
+
     public static double average(int[] numbers) {
-        return (double) Arrays.stream(numbers).sum() / numbers.length;
+        int sum = 0;
+
+        for (int number: numbers) {
+            sum += number;
+        }
+
+        return (double) sum / numbers.length;
     }
 
     public static void main(String []args) {
