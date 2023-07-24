@@ -23,10 +23,11 @@ public class Application {
         int[] numbers = new int[length];
 
         String pattern = "Введите число под номером {0}: ";
+        int number;
 
         for (int i = 0; i < length; i++) {
             System.out.print(MessageFormat.format(pattern, i + 1));
-            int number = scanner.nextInt();
+            number = scanner.nextInt();
 
             numbers[i] = number;
         }

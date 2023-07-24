@@ -6,6 +6,7 @@ public class Application {
 
 /*
         StringBuilder result = new StringBuilder();
+
         for (int i = characters.length - 1; i >= 0; i--) {
             result.append(characters[i]);
         }
