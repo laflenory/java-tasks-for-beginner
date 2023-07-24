@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Application {
     public static boolean contains(char[] array, char element) {
