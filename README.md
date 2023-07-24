@@ -1,7 +1,7 @@
 # java-tasks-for-beginner
 
 <div style="text-align: center;">
-    <img src='https://1000logos.net/wp-content/uploads/2020/09/Java-Logo.png' width=400 />
+    <img src="/assets/images/java-logotype.png" width=400 />
 </div>
 
 ---
