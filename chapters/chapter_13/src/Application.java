@@ -3,10 +3,10 @@ import java.util.Scanner;
 import java.text.MessageFormat;
 
 public class Application {
-    public static int min(int[] numbers, int length) {
+    public static int min(int[] numbers) {
         int min = numbers[0];
 
-        for (int i = 1; i < length; i++) {
+        for (int i = 1; i < numbers.length; i++) {
             if (min > numbers[i]) {
                 min = numbers[i];
             }
@@ -32,6 +32,6 @@ public class Application {
         }
 
         System.out.println("Полученный массив: " + Arrays.toString(numbers));
-        System.out.println("Минимальное число массива: " + min(numbers, length));
+        System.out.println("Минимальное число массива: " + min(numbers));
     }
 }

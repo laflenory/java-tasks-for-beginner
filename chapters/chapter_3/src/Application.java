@@ -2,10 +2,10 @@ import java.util.Scanner;
 import java.text.MessageFormat;
 
 public class Application {
-    public static int max(int[] numbers, int length) {
+    public static int max(int[] numbers) {
         int max = numbers[0];
 
-        for (int i = 1; i < length; i++) {
+        for (int i = 1; i < numbers.length; i++) {
             if (max < numbers[i]) {
                 max = numbers[i];
             }
@@ -30,6 +30,6 @@ public class Application {
         }
 
         System.out.print("Максимальное число: ");
-        System.out.println(max(numbers, length));
+        System.out.println(max(numbers));
     }
 }
